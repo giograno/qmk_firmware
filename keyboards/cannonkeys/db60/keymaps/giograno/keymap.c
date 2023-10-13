@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // left hand home row mods
 #define HOME_S LCTL_T(KC_S)
 #define HOME_D LALT_T(KC_D)
-#define HOME_F LCTL_T(KC_F)
+#define HOME_F LGUI_T(KC_F)
 
 // right hand home row mods
 #define HOME_J RGUI_T(KC_J)
