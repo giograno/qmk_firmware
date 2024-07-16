@@ -55,3 +55,10 @@ qmk c2json -kb cannonkeys/db60/hotswap -km giograno keyboards/cannonkeys/db60/ke
 
 The `keymap.json` file is in this repo as well.
 
+## Misc
+
+- `rules.mk` can be added to the keymap to keep via enabled (otherwise the board won't be recognized
+- possibly run `make git-submodule` in case some c headers are missing wheh compiling the firmware
+
+## TODO
+- see if I can send a combination of commands (e.g. alt + backspace) with MT
