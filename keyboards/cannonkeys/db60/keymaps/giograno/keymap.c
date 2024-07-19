@@ -30,8 +30,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ESC_CTL LCTL_T(KC_ESC)
 
 // arrows on tap, layer on hold
-#define LFT_ARR RGUI_T(KC_LEFT)
-#define DWN_ARR RALT_T(KC_DOWN)
+#define LFT_ARR RALT_T(KC_LEFT)
+#define DWN_ARR LT(2,KC_DOWN) 
 #define RGT_ARR RCTL_T(KC_RIGHT)
 #define UP_ARR  RSFT_T(KC_UP)
 
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC,  KC_BSLS,
     ESC_CTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,   KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,           KC_ENT,
     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,   KC_M,    KC_COMM, KC_DOT,  KC_SLSH,                    UP_ARR,
-    MO(2),   KC_LALT, KC_LGUI,                            LT(1,KC_SPC),                      KC_HYPR, LFT_ARR, DWN_ARR,  RGT_ARR
+    KC_HYPR, KC_LALT, KC_LGUI,                            LT(1,KC_SPC),                      KC_RGUI, LFT_ARR, DWN_ARR,  RGT_ARR
   ),
 
   [_FN_SYMBOLS] = LAYOUT_60_ansi(
@@ -65,9 +65,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_MEDIA] = LAYOUT_60_ansi(
     _______, KC_BRID, KC_BRIU, _______, _______, _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU, _______,
-    _______, _______, _______, _______, _______, _______, _______, KC_BTN1, KC_BTN2, _______, _______, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______, _______,          _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,                   KC_PGUP,
-    _______, _______, _______,                            _______,                            _______, KC_HOME, KC_PGDN, KC_END
+    _______, KC_BTN1, KC_MS_U, KC_BTN2, _______, _______, _______, KC_PGUP, _______, KC_PGDN, _______, _______, _______, _______,
+    _______, KC_MS_L, KC_MS_D, KC_MS_R, _______, _______, KC_HOME, _______, _______, _______, _______, _______,          _______,
+    _______, _______, _______, _______, _______, _______, KC_END,  _______, _______, _______, _______,                   _______,
+    _______, _______, _______,                            _______,                            _______, _______, _______, _______
   )
 };
